@@ -1,12 +1,11 @@
-def swap():
-    a = 14
-    b = 9
-    temp = a
-    a = b
-    b = temp
-    print("value of a after swapping :", a)
-    print("value of b after swapping :", b)
-
-swap()   # function calling
-
-
+def swap(a, b):
+    a,b = b,a
+    return a,b
+    
+A = int(input("Enter first number: "))
+B = int(input("Enter second number: "))
+print("Before swapping A :", A)
+print("Before swapping B :", B)
+A,B = swap(A, B)
+print("After swapping A :", A)
+print("After swapping B :", B)
